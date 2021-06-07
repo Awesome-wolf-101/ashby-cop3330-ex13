@@ -27,7 +27,7 @@ public class APP {
 
         double EndAmount =  PrincipalDouble * Math.pow(1 + (IterestRateDouble / CoumpoundYearsDouble),  YearsInt * CoumpoundYearsDouble);
         double EndAmountPenny = Math.round(EndAmount * 100.0) / 100.0;
-        System.out.println("After " + Years +" years at " + IterestRate +"%, the investment will be worth $"+ EndAmountPenny +".");
+        System.out.println("$"+ (int) PrincipalDouble + " invested at " +  (IterestRateDouble* 100) + "% for " + YearsInt + " years compounded " + (int) CoumpoundYearsDouble +" times per year is $"+ EndAmountPenny);
 
 
 
